@@ -69,11 +69,11 @@ const Header = () => (
                 font-size: 22px;
                 color: #fff;
                 text-decoration: none;
-                padding: 12px 10px 12px 10px;
+                padding: 11px 10px 11px 10px;
                 color: #efefef;
             }
 
-            .nav-title:hover {
+            .nav-header > a:hover {
                 background-color: rgba(0, 0, 0, 0.3);
             }
             
@@ -89,7 +89,7 @@ const Header = () => (
             
             .nav > .nav-links > a {
                 display: inline-block;
-                padding: 12px 10px 12px 10px;
+                padding: 11px 10px 11px 10px;
                 text-decoration: none;
                 color: #efefef;
             }
