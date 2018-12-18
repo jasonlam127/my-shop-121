@@ -2,12 +2,14 @@ import Layout from '../components/MyLayout.js'
 import Link from 'next/link'
 
 
-const PostLink = ({ post }) => (
-  <li>
-    <Link as={`/p/${post.id}`} href={`/post?title=${post.title}`}>
-      <a>{post.title}</a>
-    </Link>
-  </li>
+const PostLink = ({post}) => (
+    <Link
+        href={{pathname: '/product', query: { id: post.id }}}
+        as={`/p/${post.id}`}
+      >
+        <a  className ="button-style"> {post.title}</a>
+      </Link>
+    
 )
 
 function getProductRelated () {
