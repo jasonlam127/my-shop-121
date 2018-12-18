@@ -10,6 +10,12 @@ app.prepare()
   const server = express()
 
   server.get('/p/:id', (req, res) => {
+    const actualPage = '/product'
+    const queryParams = { id: req.params.id }
+    app.render(req, res, actualPage, queryParams)
+  })
+
+  server.get('/b/:id', (req, res) => {
     const actualPage = '/post'
     const queryParams = { id: req.params.id }
     app.render(req, res, actualPage, queryParams)
@@ -19,7 +25,7 @@ app.prepare()
     return handle(req, res)
   })
 
-  server.listen(process.env.PORT, (err) => {
+  server.listen(process.env.PORT|| 3000, (err) => {
     if (err) throw err
     console.log('> Server is Ready ')
   })
