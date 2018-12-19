@@ -46,7 +46,7 @@ function getProductRelated () {
 }
 
 export default () => (
-  <Layout>
+  <Layout title = 'Sneaker Love HomePage'>
     <div className="pure-g box">
 
         <div className="pure-g">

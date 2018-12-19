@@ -166,7 +166,7 @@ export default class extends Component {
     render () {
       return (
           <div>
-              <Layout>
+              <Layout title = {this.props.content.title}>
               <div className="pure-g box">
                   <div className="pure-u-1-1 pure-u-lg-1-2">
                       

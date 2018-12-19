@@ -1,10 +1,10 @@
 import Header from './Header'
 import Footer from './Footer'
 
-const Layout = (props) => (
+const Layout = ({ children, title = 'This is the default title' }) => (
   <div >
-    <Header />
-    {props.children}
+    <Header title = {title}/>
+    {children}
     <Footer />
   </div>
 )

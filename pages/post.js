@@ -49,7 +49,7 @@ export default class extends Component {
   render () {
     return (
         <div>
-            <Layout>
+            <Layout title = {this.props.content.title}>
             <div className="pure-g">
                 <div className="pure-u-1-1">
                     

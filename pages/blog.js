@@ -32,7 +32,7 @@ const PostLink = ({post}) => (
 )
 
 export default withRouter((props) => (
-  <Layout>
+  <Layout title = 'Sneaker Lover Blog'>
    
    <div className="box">
             <div className="box">
